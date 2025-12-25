@@ -1,0 +1,48 @@
+.alert-container {
+  position: fixed;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+
+.alert {
+  color: white;
+  background-color: green;
+  padding: 1rem;
+  width: 12rem;
+  border-radius: 0.5rem;
+  position: relative;
+  animation: slide 1s;
+  margin: 0.5rem;
+
+  span {
+    position: absolute;
+    right: 1rem;
+    font-size: 1rem;
+  }
+}
+
+.success {
+  background-color: green;
+}
+
+.warning {
+  background-color: orange;
+}
+
+.info {
+  background-color: blue;
+}
+
+.error {
+  background-color: red;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
